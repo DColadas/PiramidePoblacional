@@ -1,5 +1,5 @@
 # Pirámide poblacional
-Aplicación de Power BI para visualizar la pirámide poblacional de España según el año.
+Aplicación de Power BI ([online](https://powerbi.microsoft.com/es-es/landing/signin/), [Desktop](https://powerbi.microsoft.com/es-es/desktop/)) para visualizar las pirámides poblacionales de España según el año.
 
 Se proporcionan filtros para escoger las comunidades autónomas y provincias que estudiar, y un listado de años (entre 1971 y 2020).
 
@@ -7,7 +7,8 @@ Los datos se descargan directamente de [la web del INE](https://www.ine.es/jaxiT
 
 ![](images/example.png)
 
-## Problemas
+## Problemas conocidos
 - El mapa señala las comunidades autónomas en lugar de las provincias. Esto es porque algunos nombres de provincia (como Córdoba) se confunden con territorios americanos, por lo que he evitado usarlos. Seguramente se pudiera arreglar añadiendo a cada provincia sus coordenadas.
 - ¿Por qué una lista de años y no un deslizador? Porque Power BI no deja hacer deslizadores con un solo valor. :)
+- La fuente no proporciona datos para mayores de 85 años hasta 2002.
 - Los intervalos de años no indican un intervalo (indican `30`, en vez de `30-34`). Esto es por vagancia, más que otra cosa. Entiéndase que todos son intervalos de 5 años, menos `100`, que es `100 y más`.
